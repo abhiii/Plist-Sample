@@ -9,14 +9,34 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    NSString *listPath;
+}
 @end
 
 @implementation ViewController
 
+
+-(NSString*)docpath{
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+}
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
+  listPath=  [[self docpath]stringByAppendingPathComponent:@"sample.plist"];
+    NSLog(@"%@",listPath);
+    if (![[NSFileManager defaultManager]fileExistsAtPath:listPath]) {
+        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle]pathForResource:@"sample" ofType:@"plist"] toPath:listPath error:nil];
+    }
+    
+
+    
+    
+    NSArray *ar=@[@"gdffd",@"gfds",@"fdsf"];
+    [ar writeToFile:listPath atomically:YES];
+
+    
+       [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

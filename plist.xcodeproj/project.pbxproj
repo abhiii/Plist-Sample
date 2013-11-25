@@ -21,6 +21,7 @@
 		EBCF947A18431CC100041ABF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF945C18431CC100041ABF /* UIKit.framework */; };
 		EBCF948218431CC100041ABF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBCF948018431CC100041ABF /* InfoPlist.strings */; };
 		EBCF948418431CC100041ABF /* plistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCF948318431CC100041ABF /* plistTests.m */; };
+		EBCF948E18431CDA00041ABF /* sample.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBCF948D18431CDA00041ABF /* sample.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EBCF947F18431CC100041ABF /* plistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "plistTests-Info.plist"; sourceTree = "<group>"; };
 		EBCF948118431CC100041ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBCF948318431CC100041ABF /* plistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plistTests.m; sourceTree = "<group>"; };
+		EBCF948D18431CDA00041ABF /* sample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				EBCF946718431CC100041ABF /* AppDelegate.h */,
 				EBCF946818431CC100041ABF /* AppDelegate.m */,
+				EBCF948D18431CDA00041ABF /* sample.plist */,
 				EBCF946A18431CC100041ABF /* Main.storyboard */,
 				EBCF946D18431CC100041ABF /* ViewController.h */,
 				EBCF946E18431CC100041ABF /* ViewController.m */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCF948E18431CDA00041ABF /* sample.plist in Resources */,
 				EBCF947118431CC100041ABF /* Images.xcassets in Resources */,
 				EBCF946318431CC100041ABF /* InfoPlist.strings in Resources */,
 				EBCF946C18431CC100041ABF /* Main.storyboard in Resources */,
